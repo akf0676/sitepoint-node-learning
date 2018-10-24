@@ -1,0 +1,418 @@
+{
+	"info": {
+		"_postman_id": "1bfffc49-31e9-b476-1e93-6561d983b57b",
+		"name": "Sitepoint Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " http://localhost:3000/api/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"make\": \"Ford\", \n\t\"model\":\"Focus\",\n\t\"colour\": \"Blue\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						""
+					]
+				},
+				"description": "API Test"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/api/vehicles",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"make\": \"Ford\", \n\t\"model\":\"Focus\",\n\t\"colour\": \"Blue\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicles"
+					]
+				},
+				"description": "Add Vehicles to Mongo DB"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/api/vehicles/colour/white",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"make\": \"KIA\", \n\t\"model\":\"Sportage\",\n\t\"colour\": \"White\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vehicle/colour/White",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicle",
+						"colour",
+						"White"
+					]
+				},
+				"description": "Get Vehicle by Colour"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/api/vehicle/make/Ford",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"make\": \"KIA\", \n\t\"model\":\"Sportage\",\n\t\"colour\": \"White\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vehicle/make/Ford",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicle",
+						"make",
+						"Ford"
+					]
+				},
+				"description": "Get Vehicle by Make"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/api/vehicles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"make\": \"Nissan\", \n\t\"model\":\"Note\",\n\t\"colour\": \"White\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicles"
+					]
+				},
+				"description": "Get All Vehicles"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Restaurant",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Bobbys Diner\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3005/v1/restaurant/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"v1",
+						"restaurant",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Restaurants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3005/v1/restaurant/get/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"v1",
+						"restaurant",
+						"get",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Restaurant by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3005/v1/restaurant/get/5bcf1e541495afb25af14428",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"v1",
+						"restaurant",
+						"get",
+						"5bcf1e541495afb25af14428"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Restaurant Name",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Chuckie's Pizza\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3005/v1/restaurant/update/5bcf1e541495afb25af14428",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"v1",
+						"restaurant",
+						"update",
+						"5bcf1e541495afb25af14428"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Restaurant by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Chuckie's Pizza\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3005/v1/restaurant/delete/5bcf1e541495afb25af14428",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"v1",
+						"restaurant",
+						"delete",
+						"5bcf1e541495afb25af14428"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Food Truck",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Pam's Food Truck\",\n\t\"foodtype\": \"Breakfast\",\n\t\"avgcost\": 7.99,\n\t\"geometry\": {\"coordinates\": [35.89, -890.324]}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3005/v1/foodtruck/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"v1",
+						"foodtruck",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add FoodTruck Review",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Best Breakfast in Town @ Pam's Food Truck\",\n\t\"text\": \"What a delicious breakfast!!!\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3005/v1/foodtruck/reviews/add/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"v1",
+						"foodtruck",
+						"reviews",
+						"add",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reviews for a Truck",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Meh - not so great\",\n\t\"text\": \"What a rubbish breakfast!!!\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3005/v1/foodtruck/reviews/add/5bcf40ad69d5eceaec598c9c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"v1",
+						"foodtruck",
+						"reviews",
+						"add",
+						"5bcf40ad69d5eceaec598c9c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

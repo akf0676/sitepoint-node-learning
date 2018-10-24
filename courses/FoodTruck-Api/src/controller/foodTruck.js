@@ -4,12 +4,15 @@ import FoodTruck from '../model/foodtruck';
 import bodyParser from 'body-parser';
 import Review from '../model/review';
 
+//Secure foodtruck
+import { authenticate} from '../middleware/authMiddleware';
+
 export default({config, db}) => {
 	let api = Router();
 
 	//CRUD
 	// '/v1/foodtruck/add'
-	api.post('/add', (req, res) => {
+	api.post('/add', authenticate, (req, res) => {
 		let newFoodTruck = new FoodTruck();
 		newFoodTruck.name = req.body.name;
 		newFoodTruck.foodtype = req.body.foodtype;
