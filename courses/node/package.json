@@ -1,0 +1,25 @@
+{
+  "name": "helloapi-codealong",
+  "version": "1.0.0",
+  "description": "API Node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel-node ./requireAndImport.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node6"
+    ]
+  },
+  "author": "Andy Farmer",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015-node6": "^0.4.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.4",
+    "nodemon": "^1.18.4"
+  }
+}

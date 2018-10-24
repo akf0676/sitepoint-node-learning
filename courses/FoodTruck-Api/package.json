@@ -1,0 +1,42 @@
+{
+  "name": "foodtruck-api",
+  "version": "1.0.0",
+  "description": "Sitepoint Course with Jack Davis",
+  "main": "dist",
+  "scripts": {
+    "dev": "NODE_ENV=dev nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "builgit ad": "babel src -s -D -d dist --preset es2015,stage-0",
+    "start": "NODE_ENV=prod pm2 start dist",
+    "prestart": "npm run -s build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src"
+  },
+  "eslintConfig" :{
+    "parserOptions": {
+      "ecmaVersions": 7,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 1
+    }
+  },
+  "author": "Andy Farmer",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^5.7.0"
+  }
+}
