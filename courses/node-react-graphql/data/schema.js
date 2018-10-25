@@ -7,8 +7,8 @@ const typeDefs = `
 	}
 `;
 
-const SCHEMA = makeExecutableSchema({ typeDefs});
+const schema = makeExecutableSchema({ typeDefs });
 
-addMockFunctionsToSchema({ SCHEMA,  mocks});
+addMockFunctionsToSchema({ schema, mocks });
 
-export default SCHEMA;
+export default schema;

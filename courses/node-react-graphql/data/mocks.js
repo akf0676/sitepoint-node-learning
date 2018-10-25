@@ -1,5 +1,5 @@
-const MOCKS = {
+const mocks = {
 	String: () => 'It works!'
 };
 
-export default MOCKS;
+export default mocks;
