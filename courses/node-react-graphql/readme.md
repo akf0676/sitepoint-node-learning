@@ -6,6 +6,8 @@ Example of building a production ready Graph QL server, based on the blog articl
 
 Inital project setup
 We will user [Babel](https://babeljs.io/) to compile ES6 to browser compatible code.
+Assumptions the nodemon is installed globally - this will enable you to save your JS and have it automatically reload.
+
 
 * npm install --save express body-parser mongoose graphql graphql-tools
   * express = https://expressjs.com/ - Fast, unopinionated, minimalist web framework for Node.js
@@ -18,3 +20,11 @@ We will user [Babel](https://babeljs.io/) to compile ES6 to browser compatible c
   * babel-preset-env - = Babel command line
   * babel-eslint - https://www.npmjs.com/package/babel-preset-env = A Babel preset that compiles ES2015+ down to ES5 by automatically determining the Babel plugins and polyfills you need based on your targeted browser or runtime environments.
   * eslint- = https://www.npmjs.com/package/eslint - a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+
+
+### TODO
+
+* "babel-cli": "^6.26.0",
+* "babel-eslint": "^10.0.1",
+* "babel-preset-env": "^1.7.0", REmove Dependcy
+* "eslint": "^5.7.0"
