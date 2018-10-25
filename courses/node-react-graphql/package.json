@@ -10,12 +10,11 @@
   "author": "Andy Farmer",
   "license": "ISC",
   "dependencies": {
-    "apollo-server-express": "^2.1.0",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "graphql": "^14.0.2",
-    "graphql-tools": "^4.0.2",
-    "mongoose": "^5.3.6"
+    "apollo-server-express": "^1.3.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "graphql": "^0.11.7",
+    "graphql-tools": "^2.13.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
