@@ -13,7 +13,7 @@ We will user [Babel](https://babeljs.io/) to compile ES6 to browser compatible c
   * mongoose = https://www.npmjs.com/package/mongoose - Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment.
   * graphql = http://graphql.org/ - A query language for your API
   * graphql-tools = https://www.apollographql.com/docs/graphql-tools/ || https://www.npmjs.com/package/graphql-tools ways to create a GraphQL schema
-* npm install --save--dev babel-cli babel-preset-env babel-eslint eslint
+* npm install --save-dev babel-cli babel-preset-env babel-eslint eslint
   * babel-cli - https://babeljs.io/docs/en/babel-cli/ = Babel command line
   * babel-preset-env - = Babel command line
   * babel-eslint - https://www.npmjs.com/package/babel-preset-env = A Babel preset that compiles ES2015+ down to ES5 by automatically determining the Babel plugins and polyfills you need based on your targeted browser or runtime environments.
